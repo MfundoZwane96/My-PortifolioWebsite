@@ -8,7 +8,7 @@
 <body>
 
 <nav>
-    <ul>
+    <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
@@ -31,7 +31,7 @@
 
     <p>
         🔗 <strong>GitHub Repository:</strong>
-        <a href="https://github.com/MfundoZwane96/Portfolio-Website" target="_blank">
+        <a href="https://github.com/MfundoZwane96/My-PortifolioWebsite" target="_blank">
             View Source on GitHub
         </a>
     </p>
@@ -87,5 +87,15 @@
 <footer>
     <p>© 2026 Mfundo Zwane</p>
 </footer>
+<script>
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
 </body>
 </html>

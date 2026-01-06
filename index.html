@@ -5,10 +5,10 @@
     <title>Mfundo Zwane | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class ="home" >
 
 <nav>
-    <ul>
+    <ul class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
@@ -31,5 +31,15 @@
 <footer>
     <p>© 2026 Mfundo Zwane</p>
 </footer>
+<script>
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
 </body>
 </html>
