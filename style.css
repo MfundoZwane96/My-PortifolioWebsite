@@ -4,6 +4,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     position: relative;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* NAVIGATION */
@@ -52,6 +56,7 @@ section {
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
+    flex: 1;
 }
 
 /* PROJECTS */
@@ -90,11 +95,13 @@ footer {
 
 /* ✅ HOME PAGE BACKGROUND ONLY */
 body.home {
-    background-image: url("https://raw.githubusercontent.com/MfundoZwane96/My-PortifolioWebsite/main/background.png");
+    background-image: url("https://raw.githubusercontent.com/MfundoZwane96/My-PortifolioWebsite/main/313010.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
 }
 
 /* DARK OVERLAY */
@@ -105,3 +112,23 @@ body.home::before {
     background: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
+
+body.home section {
+    max-width: 700px;
+    min-height: 60px;  
+    padding: 15px;
+    margin: 40px auto;
+}
+
+
+body.home header {
+    flex: 1;                     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    align-items: center;         
+    text-align: center;
+    color: white;
+}
+
+
