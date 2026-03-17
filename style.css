@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #c6f4ed;
     position: relative;
 
     min-height: 100vh;
@@ -169,7 +169,8 @@ body.home header {
     justify-content: center;     
     align-items: center;         
     text-align: center;
-    color: rgb(131, 21, 227);
+    color: rgb(10, 1, 17);
+
 }
 .about {
     display: flex;
