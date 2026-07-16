@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Mfundo Zwane | Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class ="home" >
+
+<nav>
+
+    <div class="container nav-container">
+
+        <h2 class="logo">
+            Mfundo<span>Zwane</span>
+        </h2>
+
+        <ul class="nav-menu">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="projects.html">Portfolio</a></li>
+
+            <li><a href="skills.html">Skills</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="greeting">Hello, I'm</p>
+
+            <h1>
+                MFUNDO
+                <span>PERCY ZWANE</span>
+            </h1>
+
+            <h3>
+    
+              Software Developer • Networking Enthusiast • Problem Solver
+
+            </h3>
+
+            <p class="description">
+                I design and develop practical software solutions using Java,
+                Android, SQL, and modern web technologies while continuously
+                expanding my networking expertise.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="projects.html" class="btn">
+                    View Projects
+                </a>
+
+                <a href="contact.html" class="btn-outline">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="assets/images/WhatsApp Image 2026-03-16 at 17.21.48.jpeg"
+                 alt="Mfundo Zwane">
+
+        </div>
+
+    </section>
+
+</main>
+
+<section class="mission-vision">
+    <div class="mv-box">
+        <h3>Mission</h3>
+        <p>
+            To design and develop practical software solutions that solve real-world problems while continuously learning, improving, and creating technology that makes a positive impact
+        </p>
+    </div>
+
+    <div class="mv-box">
+        <h3>Vision</h3>
+        <p>
+           To become a world-class software developer who inspires others through innovation, continuous learning, and impactful technology
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mfundo Zwane</p>
+</footer>
+<script>
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
+</html>

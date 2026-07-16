@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    
+    <h2 class="logo">
+    MFUNDO
+</h2>
+
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Portfolio</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<section class="contact">
+
+    <h1>Let's Connect</h1>
+
+    <p class="contact-intro">
+
+        Thank you for visiting my portfolio.
+
+        I am always open to discussing software development,
+        Android development, networking opportunities,
+        collaborations, internships, and innovative ideas.
+
+        Feel free to get in touch.
+
+    </p>
+
+<div class="contact-container">
+
+<!-- =======================
+CONTACT DETAILS
+======================== -->
+
+<div class="contact-info">
+
+<div class="contact-card">
+
+<h3>📧 Email</h3>
+
+<p>
+
+zwanemfundo0@gmail.com
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>📱 Phone</h3>
+
+<p>
+
++27 84 052 7085
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>📍 Location</h3>
+
+<p>
+
+South Africa
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+    <h3>🐙 GitHub</h3>
+
+    <a href="https://github.com/MfundoZwane96"
+       target="_blank">
+
+        View My GitHub
+
+    </a>
+
+</div>
+
+<div class="contact-card">
+
+    <h3>💼 LinkedIn</h3>
+
+    <a href="https://www.linkedin.com/in/mfundo-zwane-789408145/"
+       target="_blank">
+
+        View My LinkedIn Profile
+
+    </a>
+
+</div>
+
+<div class="contact-card">
+
+<h3>📄 Resume</h3>
+
+<a href="assets/documents/Mfundo_Zwane_CV.pdf"
+download>
+
+Download CV
+
+</a>
+
+</div>
+
+</div>
+
+<!-- =======================
+CONTACT FORM
+======================== -->
+
+<div class="contact-form">
+
+<h2>Send Me a Message</h2>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+
+<input
+type="hidden"
+name="access_key"
+value="d3ecd067-df06-468b-bd16-00ef2021eb39">
+
+<input
+type="hidden"
+name="redirect"
+value="https://mfundozwane96.github.io/My_Portfolio_Website/thankyou.html">
+
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Your Email"
+required>
+
+<input
+type="text"
+name="subject"
+placeholder="Subject"
+required>
+
+<textarea
+name="message"
+placeholder="Your Message"
+rows="8"
+required></textarea>
+
+<button
+type="submit"
+class="btn">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<section class="mission-vision">
+    <div class="mv-box">
+        <h3>Mission</h3>
+        <p>
+            To design and develop practical software solutions that solve real-world problems while continuously learning, improving, and creating technology that makes a positive impact
+        </p>
+    </div>
+
+    <div class="mv-box">
+        <h3>Vision</h3>
+        <p>
+           To become a world-class software developer who inspires others through innovation, continuous learning, and impactful technology
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mfundo Zwane</p>
+</footer>
+<script>
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
+</html>

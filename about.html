@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+
+    <h2 class="logo">
+    MFUNDO
+</h2>
+    
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Portfolio</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+    <section class="about">
+
+        <div class="about-text">
+
+            <h4>My Journey</h4>
+
+            <h1>About Me</h1>
+
+            <p>
+                Hello! I'm <strong>Mfundo Percy Zwane</strong>, a
+                <strong>Software Developer</strong> and
+                <strong>Networking Enthusiast</strong> with a passion for
+                building practical software solutions that solve real-world
+                problems. I enjoy transforming ideas into applications that are
+                useful, reliable, and easy to use.
+            </p>
+
+            <p>
+                My journey into technology began with a qualification as an
+                electrician, where I developed discipline, analytical thinking,
+                attention to detail, and strong problem-solving skills. Those
+                experiences continue to influence the way I approach software
+                development today.
+            </p>
+
+            <p>
+                While I value my electrical background, I became increasingly
+                fascinated by the world of software and technology. What excites
+                me most about Information Technology is its limitless
+                opportunities for learning, innovation, and continuous growth.
+                I enjoy exploring new technologies, improving my skills, and
+                challenging myself to build solutions that make a positive
+                impact.
+            </p>
+
+            <p>
+                Today, I am expanding my knowledge in Java, Android
+                development, SQL, web development, and computer networking. I
+                am currently developing projects such as
+                <strong>Zwanix</strong>, an Android application designed to help
+                students manage their academic lives more efficiently while
+                strengthening my software development skills.
+            </p>
+
+            <p>
+                My long-term goal is to become a professional software
+                developer who creates innovative, high-quality software that
+                improves people's lives. I believe learning never stops, and I
+                am committed to continuously growing both technically and
+                professionally while contributing meaningful solutions through
+                technology.
+            </p>
+
+            <blockquote class="about-quote">
+    "I believe technology is more than writing code—it's about solving problems, creating opportunities, and making a positive impact on people's lives."
+</blockquote>
+
+        </div>
+
+    </section>
+
+</main>
+
+<section class="mission-vision">
+    <div class="mv-box">
+        <h3>Mission</h3>
+        <p>
+            To design and develop practical software solutions that solve real-world problems while continuously learning, improving, and creating technology that makes a positive impact
+        </p>
+    </div>
+
+    <div class="mv-box">
+        <h3>Vision</h3>
+        <p>
+           To become a world-class software developer who inspires others through innovation, continuous learning, and impactful technology
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mfundo Zwane</p>
+</footer>
+<script>
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
+</html>

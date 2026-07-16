@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills | Mfundo Zwane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+
+    <h2 class="logo">
+    MFUNDO
+</h2>
+    
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Portfolio</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+    <section class="skills">
+
+        <h1>Technical Skills</h1>
+
+        <p class="skills-intro">
+            My technical skills continue to grow through academic studies,
+            personal projects, and continuous learning. I enjoy exploring
+            different technologies and applying them to practical software
+            solutions.
+        </p>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <h2>Programming</h2>
+
+                <ul>
+                    <li>✓ Java</li>
+                    <li>✓ SQL</li>
+                    <li>✓ HTML5</li>
+                    <li>✓ CSS3</li>
+                </ul>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h2>Software Development</h2>
+
+                <ul>
+                    <li>✓ Android Studio</li>
+                    <li>✓ Room Database</li>
+                    <li>✓ Git</li>
+                    <li>✓ GitHub</li>
+                </ul>
+
+            </div>
+
+            <div class="skill-card">
+
+                <h2>Networking</h2>
+
+                <ul>
+                    <li>✓ Cisco Packet Tracer</li>
+                    <li>✓ VLAN Configuration</li>
+                    <li>✓ DHCP</li>
+                    <li>✓ Routing & Switching</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<section class="mission-vision">
+    <div class="mv-box">
+        <h3>Mission</h3>
+        <p>
+            To design and develop practical software solutions that solve real-world problems while continuously learning, improving, and creating technology that makes a positive impact
+        </p>
+    </div>
+
+    <div class="mv-box">
+        <h3>Vision</h3>
+        <p>
+           To become a world-class software developer who inspires others through innovation, continuous learning, and impactful technology
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mfundo Zwane</p>
+</footer>
+<script>
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll(".nav-menu a");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
+</body>
+</html>
