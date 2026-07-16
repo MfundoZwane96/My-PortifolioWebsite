@@ -1,3 +1,7 @@
+*{
+    box-sizing:border-box;
+}
+
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
@@ -243,55 +247,71 @@ nav{
 .hero-image img:hover{
     transform:scale(1.03);
 }
-/* ===========================
-   Mission & Vision
-=========================== */
+/*==================================
+MISSION & VISION
+==================================*/
 
 .mission-vision{
-    width:90%;
+
     max-width:1200px;
-    margin:0 auto 100px;
-    display:flex;
+
+    margin:80px auto;
+
+    padding:0 30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
     gap:30px;
-    justify-content:center;
-    align-items:stretch;
+
 }
 
 .mv-box{
-    flex:1;
+
     background:#1E293B;
-    padding:40px;
+
+    padding:35px;
+
     border-radius:15px;
-    border:1px solid rgba(56,189,248,.2);
-    transition:0.3s ease;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+    transition:.3s;
+
 }
 
 .mv-box:hover{
-    transform:translateY(-8px);
-    border-color:#38BDF8;
-    box-shadow:0 10px 25px rgba(56,189,248,.15);
+
+    transform:translateY(-6px);
+
 }
 
-.mv-box h3{
-    font-size:28px;
+.mv-box h2{
+
     color:#38BDF8;
-    margin-bottom:20px;
+
+    margin-bottom:15px;
+
 }
 
 .mv-box p{
-    color:#CBD5E1;
+
+    color:#E2E8F0;
+
     line-height:1.8;
-    font-size:17px;
+
 }
-@media (max-width:768px){
 
-    .mission-vision{
-        flex-direction:column;
-    }
+/* Mobile */
 
-    .mv-box{
-        width:100%;
-    }
+@media(max-width:768px){
+
+.mission-vision{
+
+    grid-template-columns:1fr;
+
+}
 
 }
 .hero{
@@ -1274,5 +1294,184 @@ FOOTER
 html{
 
     scroll-behavior:smooth;
+
+}
+
+  
+    
+
+    /* Mission & Vision */
+
+    .mission-vision{
+        flex-direction:column;
+    }
+
+    .mv-box{
+        width:100%;
+    }
+
+    /* Projects */
+
+    .project-one{
+        flex-direction:column;
+    }
+
+    .slideshow,
+    .project-text{
+        width:100%;
+    }
+
+    /* Contact */
+
+    .contact-container{
+        flex-direction:column;
+    }
+
+    .contact-info,
+    .contact-form{
+        width:100%;
+    }
+
+    /* Footer */
+
+    .footer-social{
+        flex-wrap:wrap;
+    }
+
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+/*==========================
+NAVIGATION
+==========================*/
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+/* Desktop Menu */
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    list-style:none;
+}
+
+/* Hide hamburger on desktop */
+
+.menu-toggle{
+    display:none;
+    font-size:2rem;
+    cursor:pointer;
+    color:#fff;
+}
+
+/*==========================
+MOBILE
+==========================*/
+
+@media screen and (max-width:768px){
+
+    .nav-container{
+        flex-wrap:wrap;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-menu{
+
+        display:none;
+
+        width:100%;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:20px;
+
+        margin-top:20px;
+
+        padding:20px 0;
+
+        background:#111827;
+
+    }
+
+    .nav-menu.active{
+        display:flex;
+    }
+
+}
+/*==================================
+HERO
+==================================*/
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:#0F172A;
+
+}
+
+.hero-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:0 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:380px;
+
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid #38BDF8;
 
 }

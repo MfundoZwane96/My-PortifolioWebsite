@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Mfundo Zwane</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,21 +13,35 @@
 <body>
 
 <nav>
-  <div class="nav-container">
 
-    <h2 class="logo">
-    MFUNDO
-</h2>
+    <div class="container nav-container">
 
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Portfolio</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contacts</a></li>
-      
-    </ul>
-  </div>
+        <h2 class="logo">
+            MFUNDO<span>ZWANE</span>
+        </h2>
+
+        <!-- Hamburger Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navigation -->
+        <ul class="nav-menu" id="nav-menu">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="projects.html">Portfolio</a></li>
+
+            <li><a href="skills.html">Skills</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </div>
+
 </nav>
 
 <main>
@@ -415,6 +430,29 @@ setInterval(()=>{
     showSlide(currentSlide);
 
 },3000);
+
+const menuToggle=document.getElementById("menu-toggle");
+
+const navMenu=document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click",()=>{
+
+    navMenu.classList.toggle("active");
+
+    if(navMenu.classList.contains("active")){
+
+        menuToggle.innerHTML='<i class="fas fa-times"></i>';
+
+    }
+
+    else{
+
+        menuToggle.innerHTML='<i class="fas fa-bars"></i>';
+
+    }
+
+});
+
 </script>
 
 </body>

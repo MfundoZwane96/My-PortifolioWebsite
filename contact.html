@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,21 +13,35 @@
 <body>
 
 <nav>
-  <div class="nav-container">
-    
-    <h2 class="logo">
-    MFUNDO
-</h2>
 
-    <ul class="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Portfolio</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="contact.html">Contacts</a></li>
-      
-    </ul>
-  </div>
+    <div class="container nav-container">
+
+        <h2 class="logo">
+            MFUNDO<span>ZWANE</span>
+        </h2>
+
+        <!-- Hamburger Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navigation -->
+        <ul class="nav-menu" id="nav-menu">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="projects.html">Portfolio</a></li>
+
+            <li><a href="skills.html">Skills</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </div>
+
 </nav>
 
 <main>
@@ -266,6 +281,29 @@ Send Message
             link.classList.add("active");
         }
     });
+
+const menuToggle=document.getElementById("menu-toggle");
+
+const navMenu=document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click",()=>{
+
+    navMenu.classList.toggle("active");
+
+    if(navMenu.classList.contains("active")){
+
+        menuToggle.innerHTML='<i class="fas fa-times"></i>';
+
+    }
+
+    else{
+
+        menuToggle.innerHTML='<i class="fas fa-bars"></i>';
+
+    }
+
+});
+
 </script>
 </body>
 </html>

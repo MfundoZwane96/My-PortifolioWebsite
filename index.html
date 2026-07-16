@@ -3,6 +3,7 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mfundo Zwane | Portfolio</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +21,16 @@
     <div class="container nav-container">
 
         <h2 class="logo">
-            Mfundo<span>Zwane</span>
+            MFUNDO<span>ZWANE</span>
         </h2>
 
-        <ul class="nav-menu">
+        <!-- Hamburger Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Navigation -->
+        <ul class="nav-menu" id="nav-menu">
 
             <li><a href="index.html">Home</a></li>
 
@@ -162,6 +169,29 @@
             link.classList.add("active");
         }
     });
+
+const menuToggle=document.getElementById("menu-toggle");
+
+const navMenu=document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click",()=>{
+
+    navMenu.classList.toggle("active");
+
+    if(navMenu.classList.contains("active")){
+
+        menuToggle.innerHTML='<i class="fas fa-times"></i>';
+
+    }
+
+    else{
+
+        menuToggle.innerHTML='<i class="fas fa-bars"></i>';
+
+    }
+
+});
+
 </script>
 </body>
 </html>
