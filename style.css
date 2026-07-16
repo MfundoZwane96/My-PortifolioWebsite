@@ -1131,3 +1131,148 @@ THANK YOU PAGE
     flex-wrap:wrap;
 
 }
+/*=========================================
+FOOTER
+=========================================*/
+
+.footer{
+
+    background:#020617;
+
+    margin-top:100px;
+
+    padding:60px 20px 30px;
+
+    border-top:1px solid rgba(56,189,248,.15);
+
+}
+
+.footer-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    font-size:34px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.footer-logo span{
+
+    color:#38BDF8;
+
+}
+
+.footer-text{
+
+    color:#94A3B8;
+
+    margin-bottom:30px;
+
+    font-size:17px;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.footer-social a{
+
+    width:50px;
+
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#1E293B;
+
+    color:white;
+
+    font-size:22px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#38BDF8;
+
+    color:#0F172A;
+
+    transform:translateY(-6px);
+
+}
+
+.footer hr{
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    margin:30px auto;
+
+}
+
+.copyright{
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+/* GitHub */
+.footer-social .github:hover{
+
+    background:#24292F;
+    color:white;
+
+}
+
+/* LinkedIn */
+.footer-social .linkedin:hover{
+
+    background:#0A66C2;
+    color:white;
+
+}
+
+/* Email */
+.footer-social .email:hover{
+
+    background:#EA4335;
+    color:white;
+
+}
+html{
+
+    scroll-behavior:smooth;
+
+}
